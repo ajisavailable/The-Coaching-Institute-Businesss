@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="explore-page">
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="index.html" class="logo">
+    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVQLChf1XKUx_FWuJhMEgzJB8yMtZRimbC1OtiityLCIm5iE3o=s100-p-k-no-mo">
+  </a>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="./explore.html">Explore</a>
+    <a href="./pricing.html">Pricing</a>
+    <a href="./courses.html">Courses</a>
+    <a href="./Gallery.html">Gallery</a>
+    <a href="./cmsoon.html">Coming Soon</a>
+    <a href="./contact.html">Contact Us</a>
+    <a href="./login.html" class="login-btn">Login</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="explore-hero">
+  <h1>Results That Speak</h1>
+  <p>Students from our centre are now studying in top institutes across India</p>
+</section>
+
+<!-- RESULTS -->
+<section class="explore-section">
+
+  <h2>Our Achievements</h2>
+
+  <p class="highlight">
+    Selections in top institutes like 
+    :contentReference[oaicite:0]{index=0}, 
+    :contentReference[oaicite:1]{index=1} and many more.
+  </p>
+
+  <div class="result-grid">
+    <div class="result-card">
+      <h3>🏆 IIM Selections</h3>
+      <p>Top rankers placed in premier institutes</p>
+    </div>
+
+    <div class="result-card">
+      <h3>📊 CUET Excellence</h3>
+      <p>High percentile achievers every year</p>
+    </div>
+
+    <div class="result-card">
+      <h3>🎓 Board Toppers</h3>
+      <p>Consistent academic excellence</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- NAVIGATION -->
+<section class="explore-section">
+
+  <h2>Explore More</h2>
+
+  <div class="explore-grid">
+
+    <a href="./courses.html" class="explore-card">
+      <h3>Courses</h3>
+      <p>Detailed programs & structure</p>
+    </a>
+
+    <a href="./contact.html" class="explore-card">
+      <h3>Contact</h3>
+      <p>Talk to us for guidance</p>
+    </a>
+
+    <a href="./pricing.html" class="explore-card">
+      <h3>Pricing</h3>
+      <p>Know centre fee details</p>
+    </a>
+
+  </div>
+
+</section>
+
+<!-- LOCATION -->
+<section class="explore-section location-box">
+
+  <h2>Visit Our Centre</h2>
+
+  <p>
+    📍 Reem Plaza, Kanchana Bihari Marg, Bajrang Nagar,  
+    Kalyanpur (West), Lucknow, Uttar Pradesh 226022  
+    (Located in Golden Plaza)
+  </p>
+
+  <div class="location-actions">
+    <a href="https://maps.app.goo.gl/3Gpb3v9n9XwBPNXFA" target="_blank" class="btn-primary">Open in Maps</a>
+    <a href="https://www.lmrcl.com" target="_blank" class="btn-secondary">Metro Info</a>
+  </div>
+
+  <p class="metro">
+    🚇 Nearest Metro: Munshipulia & Badshahnagar
+  </p>
+
+</section>
+
+<!-- DIRECTIONS -->
+<section class="explore-section">
+
+  <h2>How to Reach</h2>
+
+  <div class="directions-grid">
+    <div>🚖 10–15 mins from Munshipulia</div>
+    <div>🚕 20–25 mins from Badshahnagar</div>
+    <div>🛣️ Easy road connectivity</div>
+    <div>🏢 Located inside Golden Plaza</div>
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+<section class="explore-section">
+
+  <h2>Our Centre</h2>
+
+  <div class="gallery-preview">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipMSTuwLFjNCL0HZh_QwR7rpbzjBWzhIhPSDDTYC=s1360-w1360-h1020-rw">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipPdgJZW3gUln-UJ6oWEqBn6Xy5Ne0zsQsiJ4A2Q=s1360-w1360-h1020-rw">
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerxYh_rtJ3JWLIjUy591hUok-LUhKZbFWRGjUPxXZPBkvhG5GAkelxNn_QzuVSG22rz7Kj0Ihy4zsNQu6gIxJQuckokL8PN4lVM4fl23KTUiyf8sHZNP8AcN8rhQvwtR9d1ngv8FArp1sw=s1360-w1360-h1020-rw">
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>Made with ❤️ By Abhi for TCI</p>
+  <p class="footer-line">
+    <a href="mailto:abhinavisavailable+tci.bug@proton.me">Report a bug</a>
+  </p>
+  <div class="footer-links">
+    <a href="./refund.html">Refund</a>
+    <a href="./about.html">About Us</a>
+    <a href="./terms.html">Terms</a>
+  </div>
+</div>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+<!-- FIXED POPUP -->
+<div class="fixed-popup" id="popupBox">
+
+  <span class="popup-close" onclick="closePopup()">×</span>
+
+  <h3>Free Career Counselling 🎯</h3>
+
+  <p>
+    Get guidance for your future — absolutely free.
+  </p>
+
+  <p class="popup-sub">
+    No spam. No unnecessary calls. Just one helpful conversation.
+  </p>
+
+  <div class="popup-actions">
+    <a href="./contact.html" class="btn-primary">Contact Us</a>
+    <a href="./explore.html" class="btn-secondary">Reach Us</a>
+    <a href="./scholarship.html" class="btn-secondary">Scholarships</a>
+  </div>
+
+</div>
+
+<script>
+let popup = document.getElementById("popupBox");
+
+// CLOSE + REOPEN AFTER 8s
+function closePopup(){
+  popup.style.display = "none";
+
+  setTimeout(() => {
+    popup.style.display = "block";
+  }, 8000);
+}
+</script>
+</body>
+</html>

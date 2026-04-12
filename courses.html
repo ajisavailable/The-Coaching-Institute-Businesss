@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="courses-page">
+
+    <!-- NAVBAR -->
+<div class="navbar">
+  <a href="index.html" class="logo">
+  <img src="https://lh3.googleusercontent.com/a-/ALV-UjVQLChf1XKUx_FWuJhMEgzJB8yMtZRimbC1OtiityLCIm5iE3o=s100-p-k-no-mo" alt="Logo">
+</a>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+     <a href="./explore.html">Explore</a>
+    <a href="./pricing.html">Pricing</a>
+    <a href="./courses.html">Courses</a>
+    <a href="./Gallery.html">Gallery</a>
+    <a href="./cmsoon.html">Coming Soon</a>
+    <a href="./contact.html">Contact Us</a>
+    <a href="./login.html" class="login-btn">Login</a>
+  </div>
+</div>
+
+<section class="courses-container">
+
+  <h1>Explore Our Courses</h1>
+  <p class="subtitle">Designed to build concepts, boost confidence, and deliver results</p>
+
+  <div class="course-grid">
+
+    <!-- 5-8 -->
+    <div class="course-card">
+      <h2>Classes 5–8</h2>
+      <p class="desc">
+        Strong foundation in all subjects with concept-based learning,
+        regular practice, and personal attention.
+      </p>
+      <button onclick="openPopup('5-8')">See More</button>
+    </div>
+
+    <!-- SCIENCE -->
+    <div class="course-card">
+      <h2>Classes 9–12 (Science)</h2>
+      <p class="desc">
+        In-depth preparation for boards and competitive exams with
+        advanced problem solving and expert mentorship.
+      </p>
+      <button onclick="openPopup('science')">See More</button>
+    </div>
+
+    <!-- COMMERCE -->
+    <div class="course-card">
+      <h2>Classes 9–12 (Commerce)</h2>
+      <p class="desc">
+        Master Accounts, Economics & Business with practical learning,
+        case studies, and exam-focused strategy.
+      </p>
+      <button onclick="openPopup('commerce')">See More</button>
+    </div>
+
+    <!-- HUMANITIES -->
+    <div class="course-card disabled">
+      <h2>Humanities</h2>
+      <p class="desc">Courses launching soon 🚀</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+  <h2>Why Students Choose Us</h2>
+
+  <div class="features-grid">
+    <div>✔ Small Cohort (Personal Attention)</div>
+    <div>✔ Regular Homework & Practice</div>
+    <div>✔ QR Based Attendance</div>
+    <div>✔ Parent Notifications</div>
+    <div>✔ Performance Tracking</div>
+    <div>✔ Weekly Tests & Analysis</div>
+    <div>✔ Doubt Solving Sessions</div>
+    <div>✔ Career Guidance</div>
+    <div>✔ One to One Support</div>
+    <div>✔ Digital Learning Support</div>
+    <div>✔ Whatsapp Updates</div>
+    <div>✔ Carrer Guidance and Mentorship</div>
+    <div>✔ Regular Teacher Parents Meeting</div>
+    <div>✔ Performance Tracking</div>
+  </div>
+</section>
+
+<!-- TEACHERS -->
+<section class="teachers-section">
+  <h2>Meet Our Mentors</h2>
+
+  <div class="teacher-grid">
+
+    <div class="teacher-card">
+      <img src="https://i.pravatar.cc/150?img=12">
+      <h3>Physics Faculty</h3>
+      <p>10+ Years Experience</p>
+    </div>
+
+    <div class="teacher-card">
+      <img src="https://i.pravatar.cc/150?img=22">
+      <h3>Maths Expert</h3>
+      <p>Result Driven Teaching</p>
+    </div>
+
+    <div class="teacher-card">
+      <img src="https://i.pravatar.cc/150?img=32">
+      <h3>Commerce Faculty</h3>
+      <p>Concept Based Learning</p>
+    </div>
+    <div class="teacher-card">
+      <img src="https://i.pravatar.cc/150?img=32">
+      <h3>Commerce Faculty</h3>
+      <p>Concept Based Learning</p>
+    </div>
+    <div class="teacher-card">
+      <img src="https://i.pravatar.cc/150?img=32">
+      <h3>Commerce Faculty</h3>
+      <p>Concept Based Learning</p>
+    </div>
+    <div class="teacher-card">
+      <img src="https://i.pravatar.cc/150?img=32">
+      <h3>Commerce Faculty</h3>
+      <p>Concept Based Learning</p>
+    </div>
+    <div class="teacher-card">
+      <img src="https://i.pravatar.cc/150?img=32">
+      <h3>Commerce Faculty</h3>
+      <p>Concept Based Learning</p>
+    </div>
+    <div class="teacher-card">
+      <img src="https://i.pravatar.cc/150?img=32">
+      <h3>Commerce Faculty</h3>
+      <p>Concept Based Learning</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">×</span>
+    <h2>Course Features</h2>
+    <ul id="popup-details"></ul>
+  </div>
+</div>
+
+
+<div class="footer">
+  <p>
+    Made with ❤️ By Abhi for TCI 
+    <a href="mailto:abhinavisavailable+tci.bug@proton.me">Report a bug</a>
+  </p>
+
+  <p>
+    All Rights Reserved for any problem contact 
+    <a href="mailto:abhinavisavailable+tci.bug@proton.me">Abhinav</a>
+  </p>
+
+  <div>
+    <a href="./refund.html">Refund</a>
+    <a href="./about.html">About Us</a>
+    <a href="./terms.html">Terms</a>
+  </div>
+</div>
+
+<script>
+const data = {
+  "5-8": [
+    "All Subjects Coverage",
+    "Concept Building Focus",
+    "Small Batch Size",
+    "Weekly Tests",
+    "Parent Updates",
+    "Regular Homework"
+  ],
+  "science": [
+    "Physics, Chemistry, Maths, Biology",
+    "Advanced Problem Solving",
+    "Board + Competitive Prep",
+    "Mock Tests",
+    "Career Mentorship"
+  ],
+  "commerce": [
+    "Accounts, Economics, Business Studies",
+    "Case Study Learning",
+    "Board Preparation",
+    "Regular Assessments",
+    "Career Guidance"
+  ]
+};
+
+function openPopup(type){
+  const popup = document.getElementById("popup");
+  const list = document.getElementById("popup-details");
+
+  list.innerHTML = "";
+  data[type].forEach(item=>{
+    const li = document.createElement("li");
+    li.innerText = item;
+    list.appendChild(li);
+  });
+
+  popup.style.display = "flex";
+}
+
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
+
+document.getElementById("popup").addEventListener("click", function(e){
+  if(e.target.classList.contains("popup")){
+    closePopup();
+  }
+});
+</script>
+
+<!-- FIXED POPUP -->
+<div class="fixed-popup" id="popupBox">
+
+  <span class="popup-close" onclick="closePopup()">×</span>
+
+  <h3>Free Career Counselling 🎯</h3>
+
+  <p>
+    Get guidance for your future — absolutely free.
+  </p>
+
+  <p class="popup-sub">
+    No spam. No unnecessary calls. Just one helpful conversation.
+  </p>
+
+  <div class="popup-actions">
+    <a href="./contact.html" class="btn-primary">Contact Us</a>
+    <a href="./explore.html" class="btn-secondary">Reach Us</a>
+    <a href="./scholarship.html" class="btn-secondary">Scholarships</a>
+  </div>
+
+</div>
+
+<script>
+let popup = document.getElementById("popupBox");
+
+// CLOSE + REOPEN AFTER 8s
+function closePopup(){
+  popup.style.display = "none";
+
+  setTimeout(() => {
+    popup.style.display = "block";
+  }, 8000);
+}
+</script>
+</body>
+</html>

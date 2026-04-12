@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scholarship</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="scholarship-page">
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="index.html" class="logo">
+    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVQLChf1XKUx_FWuJhMEgzJB8yMtZRimbC1OtiityLCIm5iE3o=s100-p-k-no-mo">
+  </a>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="./explore.html">Explore</a>
+    <a href="./pricing.html">Pricing</a>
+    <a href="./courses.html">Courses</a>
+    <a href="./Gallery.html">Gallery</a>
+    <a href="./cmsoon.html">Coming Soon</a>
+    <a href="./contact.html">Contact Us</a>
+    <a href="./login.html" class="login-btn">Login</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="scholarship-hero">
+  <h1>Scholarship Program 🎓</h1>
+  <p>Supporting talented students to achieve their dreams</p>
+</section>
+
+<!-- DETAILS -->
+<section class="scholarship-container">
+
+  <div class="scholarship-card">
+
+    <h2>About Scholarship</h2>
+
+    <p>
+      We offer scholarships to deserving and hardworking students based on 
+      academic performance, dedication, and potential.
+    </p>
+
+    <p>
+      Our goal is to ensure that financial limitations do not stop talented 
+      students from achieving success.
+    </p>
+
+  </div>
+
+  <!-- TERMS -->
+  <div class="scholarship-card">
+
+    <h2>Terms & Conditions</h2>
+
+    <ul class="terms-list">
+      <li>Scholarship availability is limited and selective</li>
+      <li>Eligibility is decided based on performance & evaluation</li>
+      <li>Scholarship percentage may vary for each student</li>
+      <li>Final decision is at the sole discretion of the institute</li>
+      <li>Scholarship validity period is decided by the institute</li>
+    </ul>
+
+    <p class="note">
+      ⚠️ Scholarships may be revised, extended, or withdrawn at any time 
+      without prior notice.
+    </p>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="scholarship-card center">
+
+    <h2>Interested?</h2>
+
+    <p>
+      Contact us to know your eligibility and available scholarship options.
+    </p>
+
+    <div class="scholarship-actions">
+      <a href="./contact.html" class="btn-primary">Contact Us</a>
+      <a href="./courses.html" class="btn-secondary">View Courses</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>Made with ❤️ By Abhi for TCI</p>
+  <p class="footer-line">
+    <a href="mailto:abhinavisavailable+tci.bug@proton.me">Report a bug</a>
+  </p>
+  <div class="footer-links">
+    <a href="./refund.html">Refund</a>
+    <a href="./about.html">About Us</a>
+    <a href="./terms.html">Terms</a>
+  </div>
+</div>
+
+<!-- POPUP -->
+<div class="fixed-popup" id="popupBox">
+
+  <span class="popup-close" onclick="closePopup()">×</span>
+
+  <h3>Free Career Counselling 🎯</h3>
+
+  <p>Get guidance for your future — absolutely free.</p>
+
+  <p class="popup-sub">
+    No spam. No unnecessary calls. Just one helpful conversation.
+  </p>
+
+  <div class="popup-actions">
+    <a href="./contact.html" class="btn-primary">Contact Us</a>
+    <a href="./explore.html" class="btn-secondary">Reach Us</a>
+    <a href="./scholarship.html" class="btn-secondary">Scholarships</a>
+  </div>
+
+</div>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
+let popup = document.getElementById("popupBox");
+
+function closePopup(){
+  popup.style.display = "none";
+
+  setTimeout(() => {
+    popup.style.display = "block";
+  }, 8000);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="gallery-page">
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="index.html" class="logo">
+  <img src="https://lh3.googleusercontent.com/a-/ALV-UjVQLChf1XKUx_FWuJhMEgzJB8yMtZRimbC1OtiityLCIm5iE3o=s100-p-k-no-mo" alt="Logo">
+</a>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+     <a href="./explore.html">Explore</a>
+    <a href="./pricing.html">Pricing</a>
+    <a href="./courses.html">Courses</a>
+    <a href="./Gallery.html">Gallery</a>
+    <a href="./cmsoon.html">Coming Soon</a>
+    <a href="./contact.html">Contact Us</a>
+    <a href="./login.html" class="login-btn">Login</a>
+  </div>
+</div>
+
+<section class="gallery-container">
+  <h1>LIFE AT TCI</h1>
+
+  <div class="gallery-grid">
+
+    <!-- 20 IMAGES -->
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPEj3WRNuprrorNOKv2IjUo9-Daq26MLb6lOJCf=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPG9TsdEOtX1H8Ia_FRGxGF_yUdlpb37ZZ1O29z=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipM2WLYBIJh-H5IMfTKKoszU8HuTF6iNIp3JJCL0=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOgDt0Bb93ee36_mptKE4oTqF-yD3pHzW2-F1GG=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOWJzTPv7fucI4jLpXDidPQhEhPhnyhWBuwab9W=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNX8QLKrAAPI0mS7BTNujL1dlnKukHCm16FtN_R=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPgBK5cTQ43mRS5I9qiYVfx-rE8cRmDroZXtT18=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOjDiuRF5vq9EBiPIfLS-rT9aDBxc65eSlR_A5i=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipO2YXfThC1oBihiSBRdUgY5MskO8y4HlBySmIdk=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipMC7H_zqc8URbDHQSK286v959ZOu767WerbVxib=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+
+    <div class="gallery-item"><img src="./IMG Fol/Screenshot_12-4-2026_133139_www.google.com.webp" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNOlcnXmtgSB3Xfo8fS50mShsDA1iLADJq-UYQK=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOZDAmJ4BuVDsen5QoddXxZHHY-dBklBsnpVplR=s1360-w1360-h1020-rw" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="./IMG Fol/IMG-20260412-WA0003.webp" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="./IMG Fol/OIP.webp" onclick="openLightbox(this.src)"></div>
+
+    <div class="gallery-item"><img src="./IMG Fol/OIP.webp" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="./IMG Fol/OIP.webp" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="./IMG Fol/OIP.webp" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="./IMG Fol/OIP.webp" onclick="openLightbox(this.src)"></div>
+    <div class="gallery-item"><img src="./IMG Fol/OIP.webp" onclick="openLightbox(this.src)"></div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeLightbox()">×</span>
+  <img id="lightbox-img">
+</div>
+
+<div class="footer">
+  <p>
+    Made with ❤️ By Abhi for TCI 
+    <a href="mailto:abhinavisavailable+tci.bug@proton.me">Report a bug</a>
+  </p>
+
+  <p>
+    All Rights Reserved for any problem contact 
+    <a href="mailto:abhinavisavailable+tci.bug@proton.me">Abhinav</a>
+  </p>
+
+  <div>
+    <a href="./refund.html">Refund</a>
+    <a href="./about.html">About Us</a>
+    <a href="./terms.html">Terms</a>
+  </div>
+</div>
+
+<script>
+// OPEN
+function openLightbox(src) {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = src;
+}
+
+// CLOSE
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+
+// CLICK OUTSIDE TO CLOSE
+document.getElementById("lightbox").addEventListener("click", function(e){
+  if(e.target !== document.getElementById("lightbox-img")){
+    closeLightbox();
+  }
+});
+</script>
+<!-- FIXED POPUP -->
+<div class="fixed-popup" id="popupBox">
+
+  <span class="popup-close" onclick="closePopup()">×</span>
+
+  <h3>Free Career Counselling 🎯</h3>
+
+  <p>
+    Get guidance for your future — absolutely free.
+  </p>
+
+  <p class="popup-sub">
+    No spam. No unnecessary calls. Just one helpful conversation.
+  </p>
+
+  <div class="popup-actions">
+    <a href="./contact.html" class="btn-primary">Contact Us</a>
+    <a href="./explore.html" class="btn-secondary">Reach Us</a>
+    <a href="./scholarship.html" class="btn-secondary">Scholarships</a>
+  </div>
+
+</div>
+
+<script>
+let popup = document.getElementById("popupBox");
+
+// CLOSE + REOPEN AFTER 8s
+function closePopup(){
+  popup.style.display = "none";
+
+  setTimeout(() => {
+    popup.style.display = "block";
+  }, 8000);
+}
+</script>
+</body>
+</html>

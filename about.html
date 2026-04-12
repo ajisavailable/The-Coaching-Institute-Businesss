@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="index.html" class="logo">
+    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVQLChf1XKUx_FWuJhMEgzJB8yMtZRimbC1OtiityLCIm5iE3o=s100-p-k-no-mo">
+  </a>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="./explore.html">Explore</a>
+    <a href="./pricing.html">Pricing</a>
+    <a href="./courses.html">Courses</a>
+    <a href="./Gallery.html">Gallery</a>
+    <a href="./cmsoon.html">Coming Soon</a>
+    <a href="./contact.html">Contact Us</a>
+    <a href="./login.html" class="login-btn">Login</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="about-hero">
+  <h1>About Us</h1>
+  <p>Building futures with guidance, discipline and results</p>
+</section>
+
+<!-- ABOUT -->
+<section class="about-container">
+
+  <div class="about-card">
+    <h2>Who We Are</h2>
+    <p>
+      We are a dedicated learning centre focused on building strong academic
+      foundations and helping students achieve their dream colleges.
+    </p>
+
+    <p>
+      With structured courses, small batch sizes, and personal attention,
+      we ensure every student gets the support they need to succeed.
+    </p>
+  </div>
+
+</section>
+
+<!-- FOUNDERS -->
+<section class="about-container">
+
+  <h2>Meet the Founders</h2>
+
+  <div class="founder-grid">
+
+    <!-- FOUNDER 1 -->
+    <div class="founder-card">
+      <img src="https://picsum.photos/200?1">
+      <h3>Founder 1</h3>
+      <p>
+        Passionate educator focused on guiding students with clarity and discipline.
+        Dedicated to building strong academic foundations.
+      </p>
+    </div>
+
+    <!-- FOUNDER 2 -->
+    <div class="founder-card">
+      <img src="https://picsum.photos/200?2">
+      <h3>Founder 2</h3>
+      <p>
+        Focused on strategy, mentorship, and helping students achieve top results
+        through structured preparation.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>Made with ❤️ By Abhi for TCI</p>
+  <p class="footer-line">
+    <a href="mailto:abhinavisavailable+tci.bug@proton.me">Report a bug</a>
+  </p>
+  <div class="footer-links">
+    <a href="./refund.html">Refund</a>
+    <a href="./about.html">About Us</a>
+    <a href="./terms.html">Terms</a>
+  </div>
+</div>
+
+<!-- POPUP -->
+<div class="fixed-popup" id="popupBox">
+
+  <span class="popup-close" onclick="closePopup()">×</span>
+
+  <h3>Free Career Counselling 🎯</h3>
+
+  <p>Get guidance for your future — absolutely free.</p>
+
+  <p class="popup-sub">
+    No spam. No unnecessary calls. Just one helpful conversation.
+  </p>
+
+  <div class="popup-actions">
+    <a href="./contact.html" class="btn-primary">Contact Us</a>
+    <a href="./explore.html" class="btn-secondary">Reach Us</a>
+    <a href="./scholarship.html" class="btn-secondary">Scholarships</a>
+  </div>
+
+</div>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
+let popup = document.getElementById("popupBox");
+
+function closePopup(){
+  popup.style.display = "none";
+
+  setTimeout(() => {
+    popup.style.display = "block";
+  }, 8000);
+}
+</script>
+
+</body>
+</html>
