@@ -81,7 +81,7 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url('https://www.google.com/maps/place/The+Coaching+institute/@26.9013108,80.97195,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipP-CK8WQH2qXvom9ZpfScCI_uueLYQkigdtVpsQ!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fp%2FAF1QipP-CK8WQH2qXvom9ZpfScCI_uueLYQkigdtVpsQ%3Dw203-h114-k-no!7i1440!8i810!4m7!3m6!1s0x399957f2d1db715f:0xb28fdf9f07cbac5d!8m2!3d26.9013408!4d80.9719219!10e5!16s%2Fg%2F11lb1g6ggs?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D#') center/cover;
+  background: url(./2021-02-23.webp) center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
